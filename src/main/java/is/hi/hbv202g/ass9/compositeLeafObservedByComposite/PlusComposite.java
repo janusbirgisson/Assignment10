@@ -27,7 +27,15 @@ public class PlusComposite implements MathExpression, Observer {
 
     public List<MathExpression> getChildren() { return children;
     }
+    private int lastObservedResault;
 
     public void update() {
-    }
+	    lastObservedResault= getResult();
+	    System.out.println(lastObservedResault);
+			    
+
+		         }
+    public int getLastObservedResault(){
+	    return lastObservedResault;
+    } 
 }
