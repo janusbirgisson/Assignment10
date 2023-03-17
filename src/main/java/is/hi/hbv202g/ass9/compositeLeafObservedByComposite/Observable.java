@@ -10,9 +10,6 @@ public abstract class Observable{
 
 	public Observable(){
 		observers = new ArrayList<Observer>();
-
-
-
 	}
 	public void attach(Observer observer) {
 		observers.add(observer);
