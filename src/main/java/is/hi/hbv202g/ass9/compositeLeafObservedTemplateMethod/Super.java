@@ -1,13 +1,9 @@
-package is.hi.hbv202g.ass9.compositeLeafObservedByComposite;
+package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlusComposite implements MathExpression, Observer {
-
-    public PlusComposite(List<MathExpression> children) {
-        this.children = children;
-    }
+public abstract class Super{
 
     private List<MathExpression> children = new ArrayList<MathExpression>();
 
@@ -30,11 +26,12 @@ public class PlusComposite implements MathExpression, Observer {
     private int lastObservedResault;
 
     public void update() {
-	    lastObservedResault= getResult();
-	    System.out.println(lastObservedResault);
-		         }
+        lastObservedResault= getResult();
+        System.out.println(lastObservedResault);
+    }
 
     public int getLastObservedResault(){
-	    return lastObservedResault;
+        return lastObservedResault;
     }
+}
 }
