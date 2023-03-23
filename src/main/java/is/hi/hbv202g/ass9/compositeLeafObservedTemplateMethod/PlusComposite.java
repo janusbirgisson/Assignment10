@@ -1,18 +1,18 @@
 package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class PlusComposite implements MathExpression, Observer {
-
-
+public class PlusComposite extends PlusAndMultiplyTemplate implements MathExpression, Observer {
 
     public int getResult() {
-        int result = 1;
+        int result = 0;
+        int temp;
+        if (children.size() == 0) {
+            return 0;
+        }
+
         for (MathExpression child : children) {
-            result += child.getResult();
+            temp = child.getResult();
+            result += temp;
         }
         return result;
     }
-
 }

@@ -1,5 +1,7 @@
 package is.hi.hbv202g.ass9.composite;
 
+import is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer;
+
 import java.util.ArrayList;
 import java.util.List;
 

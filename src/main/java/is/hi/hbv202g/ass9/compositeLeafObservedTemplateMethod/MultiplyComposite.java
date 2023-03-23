@@ -3,7 +3,7 @@ package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiplyComposite implements MathExpression {
+public class MultiplyComposite extends PlusAndMultiplyTemplate implements MathExpression, Observer {
     private List<MathExpression> children = new ArrayList<MathExpression>();
 
     public int getResult() {
@@ -13,23 +13,5 @@ public class MultiplyComposite implements MathExpression {
         }
         return result;
     }
-    public void add(MathExpression component) {
-        children.add(component);
-    }
-    public void remove(MathExpression component) {
-        children.remove(component); }
 
-    public List<MathExpression> getChildren() { return children;
-    }
-
-    private int lastObservedResault;
-
-    public void update() {
-        lastObservedResault= getResult();
-        System.out.println(lastObservedResault);
-    }
-
-    public int getLastObservedResault(){
-        return lastObservedResault;
-    }
 }

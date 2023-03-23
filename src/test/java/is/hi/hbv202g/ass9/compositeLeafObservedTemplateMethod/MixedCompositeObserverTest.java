@@ -2,6 +2,7 @@ package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.*;
 
 public class MixedCompositeObserverTest {
 
