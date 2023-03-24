@@ -23,4 +23,4 @@ Maven:
 
 # License
 
-You can find the licence [here](https://spdx.org/licenses/MIT.html).
+You can find the licence [here](LICENSE).
