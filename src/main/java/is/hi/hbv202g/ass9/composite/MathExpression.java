@@ -1,3 +1,4 @@
+//þetta er rétta
 package is.hi.hbv202g.ass9.composite;
 
 
