@@ -9,7 +9,7 @@ public abstract class PlusAndMultiplyTemplate {
 
     protected abstract int getResult();
 
-
+// comment
     public void add(MathExpression child){
         children.add(child);
     }
