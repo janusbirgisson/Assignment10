@@ -1,0 +1,1 @@
+![UML class diagram](compositeLeafObservedTemplateMethod.png "UML")
