@@ -1,1 +1,1 @@
-![UML class diagram](compositeLeafObservedTemplateMethod.png "UML")
+!UML class diagram[](https://haskoliislands.instructure.com/courses/24440/modules/items/578510)
